@@ -1,0 +1,68 @@
+<app-header title="asd@asd"></app-header>
+<ion-content>
+  <div class="glass-content">
+
+    <ion-app>
+      <ion-menu contentId="main-content">
+        <ion-header>
+          <ion-toolbar color="tertiary">
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-button id="present-alert">Dont Click Me</ion-button>
+            <ion-alert
+              trigger="present-alert"
+              header="Alert"
+              subHeader="MENSAJE IMPORTANTE"
+              message="Si se pudo lol"
+              [buttons]="alertButtons"
+            ></ion-alert>
+
+            <p routerLink="../" class="ion-text-end">Cerrar Sesion</p>
+
+        </ion-content>
+      </ion-menu>
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding"> 
+
+
+          <ion-card>
+            <img src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title>Sera que uber se va a la quiebra?</ion-card-title>
+              <ion-card-subtitle>:0</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Realmente esa data es imposible de predecir ya que no soy na oraculo pa la vola
+            </ion-card-content>
+          </ion-card>
+          
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title>Saldra GTA6 en algum momento?</ion-card-title>
+              <ion-card-subtitle>Ojala k siii</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Nos llevan vendiendo GTA 5 ya 10 años , rockstar no quiere menos plata pq seguimos pagando lo mismo pero actualizao lol
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+      </div>
+    </ion-app>
+
+
+
+  </div>
+</ion-content>
